@@ -5,6 +5,7 @@
 <table>
   <thead>
     <tr>
+      <th>Picture</th>
       <th>Name</th>
       <th>Catagory</th>
       <th>Ingredients</th>
@@ -17,6 +18,7 @@
   <tbody>
     <% @recipes.each do |recipe| %>
       <tr>
+        <td><%= image_tag (recipe.picture_url), :width=> 200 %></td>
         <td><%= recipe.name %></td>
         <td><%= recipe.catagory %></td>
         <td><%= recipe.ingredients %></td>
