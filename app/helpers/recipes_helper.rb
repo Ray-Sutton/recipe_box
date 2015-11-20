@@ -1,27 +1,27 @@
 module RecipesHelper
 
 
-def resource_name
+	def resource_name
 
-:user
+		:user
 
-end
-
-
-
-def resource
-
-@resource ||= User.new
-
-end
+	end
 
 
 
-def devise_mapping
+	def resource
 
-@devise_mapping ||= Devise.mappings[:user]
+		@resource ||= User.new
 
-end
+	end
+
+
+
+	def devise_mapping
+
+		@devise_mapping ||= Devise.mappings[:user]
+
+	end
 
 
 
