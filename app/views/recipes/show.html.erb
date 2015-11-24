@@ -1,34 +1,48 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <p id="notice"><%= notice %></p>
+  <div class="heading">
+    <p>
+      <strong>Name:</strong>
+      <%= @recipe.name %>
+    </p>
+    <p>
+      <strong>Catagory:</strong>
+      <%= @recipe.catagory %>
+    </p>
+  </div>
+  <div class="row">
+  <div class="picture">
+    <p>
+      <strong>Picture:</strong>
+      <%= image_tag (@recipe.picture) %>
+    </p>
+  </div>
+  <div class="time">
+    <p>
+      <strong>Minutes to prepare:</strong>
+      <%= @recipe.minutes_to_prepare %>
+    </p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @recipe.name %>
-</p>
-
-<p>
-  <strong>Catagory:</strong>
-  <%= @recipe.catagory %>
-</p>
-
-<p>
-  <strong>Ingredients:</strong>
-  <%= @recipe.ingredients %>
-</p>
-
-<p>
-  <strong>Instructions:</strong>
-  <%= @recipe.instructions %>
-</p>
-
-<p>
-  <strong>Minutes to prepare:</strong>
-  <%= @recipe.minutes_to_prepare %>
-</p>
-
-<p>
-  <strong>Minutes to cook:</strong>
-  <%= @recipe.minutes_to_cook %>
-</p>
+    <p>
+      <strong>Minutes to cook:</strong>
+      <%= @recipe.minutes_to_cook %>
+    </p>
+  </div>
+  </div>
+  <div class="ingredients">
+    <p>
+      <strong>Ingredients:</strong>
+      <%= @recipe.ingredients %>
+    </p>
+  </div>
+  <div class="instructions">
+    <p>
+      <strong>Instructions:</strong>
+      <%= @recipe.instructions %>
+    </p>
+  </div>
+  
+</div>
 
 <%= link_to 'Edit', edit_recipe_path(@recipe) %> |
 <%= link_to 'Back', recipes_path %>

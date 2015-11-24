@@ -26,4 +26,3 @@ module RecipesHelper
 
 
 end
-end

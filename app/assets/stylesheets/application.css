@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+.heading {
+}
+
+.ingredients {
+width: 50%;
+float: right;
+}
+.instructions {
+float: right;
+width: 50%;
+}
+.picture {
+float: left;
+width: 50%;	
+}
+.time {
+width: 50%;
+float: left;
+}
