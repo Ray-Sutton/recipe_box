@@ -14,3 +14,13 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+$(document).ready(function(){
+	$.get( "http://localhost:3000/recipes.json", function( data) {
+		$( ".result").html( JSON.stringify(data) );
+		alert( JSON.stringify(data ));
+		for(var i = 0; i <data.length; i++){
+			var recipe = data[i]; 
+			console.log(recipe.name);
+		}
+	});
+});
